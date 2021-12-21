@@ -8,15 +8,16 @@ window.addEventListener("DOMContentLoaded", () => {
   //   alert("💣");
   // });
   
-    // const body = document.querySelector('body');
-    // const article = document.querySelectorAll('article');
-    
-     for(let i = 0;i <5;i++){
-       const article = document.createElement("article");
-       article.classList.add('message');
-       document.body.appendChild(article);
-       article.textContent = 'msg'
-     }
+    const body = document.querySelector('body');
+    body.addEventListener('click',function() {
+
+      for(let i = 0;i <5;i++){
+        const article = document.createElement("article");
+        article.classList.add('message');
+        document.body.appendChild(article);
+        article.textContent = 'msg'
+      }
+    })
     
      
       
