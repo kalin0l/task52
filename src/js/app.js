@@ -8,18 +8,17 @@ window.addEventListener("DOMContentLoaded", () => {
   //   alert("💣");
   // });
   
-    const body = document.querySelector('body');
-    const article = document.querySelectorAll('article');
-    document.body.addEventListener('onClick',() => {
-     for(let i = 0;i <=5;i++){
+    // const body = document.querySelector('body');
+    // const article = document.querySelectorAll('article');
+    
+     for(let i = 0;i <5;i++){
        const article = document.createElement("article");
        article.classList.add('message');
        document.body.appendChild(article);
+       article.textContent = 'msg'
      }
-     article.forEach(item => {
-       item.textContent = 'msg';
-     })
+    
      
-      })
+      
     
 });
